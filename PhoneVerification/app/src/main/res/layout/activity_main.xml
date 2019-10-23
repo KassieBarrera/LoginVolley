@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleVerificacion"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic|bold"/>
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20pt"
+        android:orientation="vertical"
+        android:layout_below="@id/title">
+
+        <EditText
+            android:id="@+id/edtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingresarTelefono"
+            android:paddingLeft="10dp"
+            android:inputType="phone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/instruccion"
+            android:paddingLeft="5dp"/>
+
+        <Button
+            android:id="@+id/IngresoTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enviar_token"/>
+        <EditText
+            android:id="@+id/edtToken"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/IngresoToken"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20pt"
+        android:text="@string/verificar"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Phone Verification</string>
+    <string name="ingresarTelefono">Ingresa tu número de telefono</string>
+    <string name="instruccion">Ingresa tú número de telefono para enviar un token de verificacion</string>
+    <string name="IngresoToken">Ingresa el token que se te ha enviado</string>
+    <string name="verificar">Verificar</string>
+    <string name="titleVerificacion">Verificacion por número</string>
+    <string name="enviar_token">Enviar Token</string>
+</resources>
